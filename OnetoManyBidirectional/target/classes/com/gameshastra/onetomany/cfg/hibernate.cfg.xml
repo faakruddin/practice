@@ -1,0 +1,26 @@
+<!DOCTYPE hibernate-configuration PUBLIC
+	"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+	"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+
+	<session-factory>
+
+		<property name="connection.driver.class">com.mysql.cj.jdbc.Driver</property>
+		<property name="connection.url">jdbc:mysql://localhost:3306/songbeat_unity_dev</property>
+		<property name="connection.user">root</property>
+		<property name="connection.password">root</property>
+
+		<property name="show_sql">true</property>
+		<property name="hibernate.dialect">org.hibernate.dialect.MySQL8Dialect</property>
+		<mapping class="com.gameshastra.entity.AvatarsRankEntity" />
+		<mapping class="com.gameshastra.entity.ShopInventoryEntity" />
+		<mapping class="com.gameshastra.entity.UserDetails"/>
+		<mapping class="com.gameshastra.entity.DailyRewards"/>
+		<mapping class="com.gameshastra.entity.InventoryTransEntity"/>
+
+
+	</session-factory>
+
+
+</hibernate-configuration>
